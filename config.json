@@ -1,0 +1,65 @@
+{
+  "source": ["./src/**/*"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "./src/generated/",
+      "transforms": [
+        "ts/resolveMath",
+        "ts/size/px",
+        "ts/size/css/letterspacing",
+        "ts/size/lineheight",
+        "ts/color/css/hexrgba",
+        "ts/color/modifiers",
+        "ts/typography/css/shorthand",
+        "ts/shadow/css/shorthand",
+        "ts/border/css/shorthand",
+        "name/cti/kebab",
+        "prefixBySourceFile"
+      ],
+      "files": [
+        {
+          "destination": "variables.scss",
+          "format": "scss/variables",
+          "options": { "showFileHeader": false }
+        }
+      ]
+    },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "./src/generated/",
+      "files": [
+        {
+          "destination": "variables.js",
+          "format": "javascript/es6",
+          "options": { "showFileHeader": false }
+        }
+      ]
+    },
+    "web": {
+      "transformGroup": "web",
+      "buildPath": "./src/generated/",
+      "transforms": [
+        "ts/resolveMath",
+        "ts/size/px",
+        "ts/size/css/letterspacing",
+        "ts/size/lineheight",
+        "ts/color/css/hexrgba",
+        "ts/color/modifiers",
+        "ts/typography/css/shorthand",
+        "ts/shadow/css/shorthand",
+        "ts/border/css/shorthand",
+        "name/cti/kebab",
+        "prefixBySourceFile"
+      ],
+      "files": [
+        {
+          "destination": "css-variables.scss",
+          "format": "css/variables",
+          "selector": ":root",
+          "options": { "showFileHeader": false }
+        }
+      ]
+    }
+  }
+}

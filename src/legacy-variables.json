@@ -1,0 +1,45 @@
+{
+  "colours": {
+    "green": {
+      "regular": "#C4D600",
+      "darker": "#8CB820"
+    },
+    "amber": {
+      "regular": "#FF7200",
+      "darker": "#EC662F"
+    },
+    "red": {
+      "regular": "#FF0000",
+      "darker": "#C23725"
+    },
+    "lightblue": {
+      "regular": "#63bbea"
+    }
+  },
+  "textValues": {
+    "noAnswer": "--",
+    "notSet": "Not recorded"
+  },
+  "theme": {
+    "danger": {
+      "background": "#f8d7da",
+      "color": "#721c24"
+    },
+    "warning": {
+      "background": "#fff3cd",
+      "color": "#856404"
+    },
+    "success": {
+      "background": "#ecf7d2",
+      "color": "#0d1103"
+    },
+    "brand": {
+      "lighterBlue": "#dcf2f8",
+      "lightBlue": "#7cbde3",
+      "blue": "#2793d1",
+      "darkBlue": "#00556e",
+      "grey": "#808080"
+    },
+    "font": "#00556e"
+  }
+}
