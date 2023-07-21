@@ -1,5 +1,6 @@
-const StyleDictionary = require("style-dictionary").extend("./config.json");
-const { registerTransforms } = require("@tokens-studio/sd-transforms");
+const StyleDictionary = require("style-dictionary");
+const { registerTransforms, transforms } = require("@tokens-studio/sd-transforms");
+
 registerTransforms(StyleDictionary);
 
 const path = require("path");
@@ -31,4 +32,11 @@ StyleDictionary.registerTransform({
   },
 });
 
-StyleDictionary.buildAllPlatforms();
+StyleDictionary.registerTransformGroup({
+  name: 'custom/tokens-studio',
+  transforms: [...transforms, 'attribute/cti', 'name/cti/kebab', 'prefixBySourceFile'],
+});
+
+const sd = StyleDictionary.extend('./config.json')
+
+sd.buildAllPlatforms();

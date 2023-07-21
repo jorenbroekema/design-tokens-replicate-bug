@@ -1,22 +1,9 @@
 {
-  "source": ["./src/**/*"],
+  "source": ["./src/**/*.json"],
   "platforms": {
     "scss": {
-      "transformGroup": "scss",
+      "transformGroup": "custom/tokens-studio",
       "buildPath": "./src/generated/",
-      "transforms": [
-        "ts/resolveMath",
-        "ts/size/px",
-        "ts/size/css/letterspacing",
-        "ts/size/lineheight",
-        "ts/color/css/hexrgba",
-        "ts/color/modifiers",
-        "ts/typography/css/shorthand",
-        "ts/shadow/css/shorthand",
-        "ts/border/css/shorthand",
-        "name/cti/kebab",
-        "prefixBySourceFile"
-      ],
       "files": [
         {
           "destination": "variables.scss",
@@ -26,7 +13,7 @@
       ]
     },
     "js": {
-      "transformGroup": "js",
+      "transformGroup": "custom/tokens-studio",
       "buildPath": "./src/generated/",
       "files": [
         {
@@ -37,21 +24,8 @@
       ]
     },
     "web": {
-      "transformGroup": "web",
+      "transformGroup": "custom/tokens-studio",
       "buildPath": "./src/generated/",
-      "transforms": [
-        "ts/resolveMath",
-        "ts/size/px",
-        "ts/size/css/letterspacing",
-        "ts/size/lineheight",
-        "ts/color/css/hexrgba",
-        "ts/color/modifiers",
-        "ts/typography/css/shorthand",
-        "ts/shadow/css/shorthand",
-        "ts/border/css/shorthand",
-        "name/cti/kebab",
-        "prefixBySourceFile"
-      ],
       "files": [
         {
           "destination": "css-variables.scss",

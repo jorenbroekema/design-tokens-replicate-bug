@@ -24,7 +24,7 @@ $token-global-border-width-default: 1px;
 $token-global-border-width-2x: 2px;
 $token-global-border-width-3x: 3px;
 $token-global-border-width-4x: 4px;
-$token-global-spacing-default: 16px;
+$token-global-spacing-default: 16px; // Default spacing value
 $token-global-spacing-4xs: 2px;
 $token-global-spacing-3xs: 4px;
 $token-global-spacing-2xs: 6px;
@@ -38,7 +38,7 @@ $token-global-spacing-3xl: 40px;
 $token-global-spacing-4xl: 48px;
 $token-global-spacing-5xl: 56px;
 $token-global-spacing-6xl: 64px;
-$token-semantic-spacing-inset-default: 16px 16px 16px 16px;
+$token-semantic-spacing-inset-default: 16px 16px 16px 16px; // Equal spacing on all sides at the default (md) size
 $token-semantic-spacing-inset-3xs: 4px 4px 4px 4px;
 $token-semantic-spacing-inset-2xs: 6px 6px 6px 6px;
 $token-semantic-spacing-inset-xs: 8px 8px 8px 8px;
@@ -48,7 +48,7 @@ $token-semantic-spacing-inset-lg: 20px 20px 20px 20px;
 $token-semantic-spacing-inset-xl: 24px 24px 24px 24px;
 $token-semantic-spacing-inset-2xl: 32px 32px 32px 32px;
 $token-semantic-spacing-inset-3xl: 40px 40px 40px 40px;
-$token-semantic-spacing-stack-default: 0 0 16px 0;
+$token-semantic-spacing-stack-default: 0 0 16px 0; // Default (md) bottom spacing
 $token-semantic-spacing-stack-4xs: 0 0 4px 0;
 $token-semantic-spacing-stack-3xs: 0 0 4px 0;
 $token-semantic-spacing-stack-2xs: 0 0 6px 0;
@@ -59,7 +59,7 @@ $token-semantic-spacing-stack-lg: 0 0 20px 0;
 $token-semantic-spacing-stack-xl: 0 0 24px 0;
 $token-semantic-spacing-stack-2xl: 0 0 32px 0;
 $token-semantic-spacing-stack-3xl: 0 0 40px 0;
-$token-semantic-spacing-inset-squish-default: 8px 16px;
+$token-semantic-spacing-inset-squish-default: 8px 16px; // Horizontal padding at the default (md) size Vertical padding at xs size
 $token-semantic-spacing-inset-squish-3xs: 2px 4px;
 $token-semantic-spacing-inset-squish-2xs: 4px 6px;
 $token-semantic-spacing-inset-squish-xs: 4px 8px;
@@ -69,7 +69,7 @@ $token-semantic-spacing-inset-squish-lg: 12px 20px;
 $token-semantic-spacing-inset-squish-xl: 12px 24px;
 $token-semantic-spacing-inset-squish-2xl: 16px 32px;
 $token-semantic-spacing-inset-squish-3xl: 20px 40px;
-$token-semantic-spacing-inset-stretch-default: 16px 8px;
+$token-semantic-spacing-inset-stretch-default: 16px 8px; // Vertical padding at the default (md) size Horizontal padding at xs size
 $token-semantic-spacing-inset-stretch-3xs: 4px 2px;
 $token-semantic-spacing-inset-stretch-2xs: 6px 4px;
 $token-semantic-spacing-inset-stretch-xs: 8px 4px;
@@ -79,7 +79,7 @@ $token-semantic-spacing-inset-stretch-lg: 20px 12px;
 $token-semantic-spacing-inset-stretch-xl: 24px 12px;
 $token-semantic-spacing-inset-stretch-2xl: 32px 16px;
 $token-semantic-spacing-inset-stretch-3xl: 40px 20px;
-$token-semantic-spacing-inline-default: 0 16px 0 0;
+$token-semantic-spacing-inline-default: 0 16px 0 0; // Default (md) spacing on the right
 $token-semantic-spacing-inline-4xs: 0 2px 0 0;
 $token-semantic-spacing-inline-3xs: 0 4px 0 0;
 $token-semantic-spacing-inline-2xs: 0 6px 0 0;
@@ -90,7 +90,7 @@ $token-semantic-spacing-inline-lg: 0 20px 0 0;
 $token-semantic-spacing-inline-xl: 0 24px 0 0;
 $token-semantic-spacing-inline-2xl: 0 32px 0 0;
 $token-semantic-spacing-inline-3xl: 0 40px 0 0;
-$token-global-font-family-sans-serif: Open Sans;
+$token-global-font-family-sans-serif: 'Open Sans';
 $token-global-color-deep-sea-blue-100: #F1FBFF;
 $token-global-color-deep-sea-blue-200: #D9EAF1;
 $token-global-color-deep-sea-blue-300: #C1D9E3;
@@ -346,9 +346,9 @@ $token-semantic-icon-size-md: 20px;
 $token-semantic-icon-size-lg: 24px;
 $token-semantic-icon-size-xl: 32px;
 $token-semantic-icon-size-2xl: 40px;
-$token-semantic-elevation-overlay-shadow: 0 8px 12px 0 #001D2C4F, 0 1px 1px 0 #001D2C26;
-$token-semantic-elevation-raised-shadow: 0 0 1px 0 #001D2C52, 0 3px 3px 0 #001D2C14;
-$token-semantic-elevation-subtle-shadow: 0 1px 2px 0 #001D2C1A;
+$token-semantic-elevation-overlay-shadow: 0 8px 12px 0 #001D2C4F, 0 1px 1px 0 #001D2C26; // Shadow for elements that overlay others such as modals and popovers
+$token-semantic-elevation-raised-shadow: 0 0 1px 0 #001D2C52, 0 3px 3px 0 #001D2C14; // Shadow for elements that are slightly raised such as cards and tiles
+$token-semantic-elevation-subtle-shadow: 0 1px 2px 0 #001D2C1A; // Subtle shadow below the element it's applied to. Used for navigation / breadcrumb bar
 $token-size-font-small: 14;
 $token-size-font-medium: 18;
 $token-size-font-large: 24;
